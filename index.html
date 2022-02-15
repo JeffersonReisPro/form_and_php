@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FORMULÁRIO DE INSCRIÇÃO DO EVENTO </title>
+     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- Additional JS Files -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+<form name="myForm" method="POST" action="form.php"  id="myForm">
+	<div class="box">
+		<h1>FORMULÁRIO DE INSCRIÇÃO DO EVENTO </h1>
+
+		<label>
+			<span>Nome</span>
+ 			<input type="text" style="width:29%;" class="input_text" name="name" id="name" required>
+            <input type="text" style="width:29%;" class="input_text" name="lastname" id="lastnome" required>
+		</label>
+
+        <label>
+			<span>Empresa</span>
+ 			<input type="text" class="input_text" name="company" id="company"/>
+		</label>
+
+		<label>
+ 			<span>E-mail</span>
+			<input type="text" class="input_text" name="email" id="email"/>
+		 </label>
+
+         <label>
+			<span>Telefone</span>
+ 			<input type="text" placeholder="XXX" style="width:13%; margin-right: 10px;" class="input_text" name="arecode" id="arecode"/>
+            <input type="text" maxlength="14" placeholder="(XX) XXX-XXXX" class="input_text" name="phone" id="phone"/>
+		</label>
+
+        <label>
+ 			<span>Assunto</span>
+            <select id="subject" name="subject">
+                <option value="Question">Perguntar</option>
+                <option value="Request">Solicitar</option>
+            </select>
+		</label>
+
+        <label>
+			<p>Você já é cliente?</p>  
+            <input style="margin-left: 50px;" type="radio" value="Yes" name="newCustomer">  Sim               
+            <input type="radio" name="newCustomer" value="No" checked>   Não 
+		</label>
+
+		<label>
+			<button type="submit"  class="button" id="submitbtn" value="REGISTER" >Registrar</button> 
+		</label>
+
+	</div>
+</form>
+
+</body>
+</html>
